@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+  background: rgb(5, 58, 24);
+  background: linear-gradient(
+    153deg,
+    rgb(3, 53, 21) 0%,
+    rgb(0, 17, 4) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.utterances {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.utterances-frame {
+  color-scheme: light;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1px;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.capitalize-first::first-letter {
+  text-transform: capitalize;
+}
+
+.lined-background {
+  background-image: linear-gradient(to right, #374151 1px, transparent 1px),
+                    linear-gradient(to bottom, #374151 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 82.71 77.9% 55.49%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 0 72.2% 50.6%;
+    --radius: 0.5rem;
+    --sb-track-color: #1b1b1b;
+    --sb-thumb-color: #66a500;
+    --sb-size: 10px;
+  }
+ 
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 0 72.2% 50.6%;
+  }
+
+  @media (max-width: 640px) {
+    html {
+      zoom: 0.8;
+      -moz-transform: scale(0.8);
+      -moz-transform-origin: 0 0;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+footer {
+  background-color: transparent; 
+  margin-top: auto; 
+  padding: 0.5rem 0; 
+}
+
+::selection {
+  background-color: #84cc16;
+  color: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .max-w-screen {
+    max-width: 100vw;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
