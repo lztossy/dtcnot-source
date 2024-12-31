@@ -1,14 +1,14 @@
-Hello everyone, you're probably wondering why this is leaked.
+Hello everyone,
 
-The original owner rzr1931 (also known as starhook, r4ave, rave1337) has scammed multiple users, and one has come to light.
-Rzr had used a browser utility to scrape the source code of a popular website https://kycnot.me/ and deployed it to the public, taking credit for writting it and the UIX
+You might be wondering why this has been leaked.
+
+The original owner, rzr1931 (*also known as starhook, r4ave, rave1337*), has scammed multiple individuals, and one incident has recently come to light. Rzr utilized a browser utility to scrape the source code of a popular website, https://kycnot.me/, and publicly deployed it while falsely claiming credit for creating both the code and UI/UX.
 
 # How did I get into this scandal? 
-Shortly after the release, I had audited the website, and noticed that not only it was terrible, exploitable, and just really badly organized. I contacted the owner to let him know of the issue, this led to me re-writting the entire source code in nextjs/typescript
-adding security, load balancing, mitigation & basic cloudflare precautions. 
+Shortly after the release, I audited the website and discovered that it was poorly constructed, highly exploitable, and disorganized. I reached out to the owner to address these issues, which led me to completely rewrite the entire source code using Next.js and TypeScript. I also added essential features such as enhanced security, load balancing, mitigation measures, and basic Cloudflare precautions.
 
 # Why is this getting leaked?
-I have no respect for scammers, especially those who strive to lead a community based on truthworthynewss and reputation. So here I am leaking the source so the future of DTCNOT ceases to exist.
+I have zero tolerance for scammers, especially those who attempt to lead a community based on trustworthiness and reputation. Therefore, I am leaking this source code to ensure the future of DTCNOT is effectively terminated.
 
 # Deployment
 ```
