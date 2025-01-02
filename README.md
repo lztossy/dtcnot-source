@@ -1,4 +1,3 @@
-Hello everyone, 
 
 The original owner, rzr1931 (*also known as starhook, r4ave, rave1337*), has scammed multiple individuals thus why my source is now public
 
