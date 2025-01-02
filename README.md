@@ -1,6 +1,8 @@
 
 The original owner, rzr1931 (*also known as starhook, r4ave, rave1337*), has scammed multiple individuals thus why my source is now public
 
+the website is still up as the source fell into the wrong hands, but u can preview it at https://dtcnot.me (do not trust it)
+
 # preface
 Shortly after the release, I audited the website and discovered that it was poorly constructed, highly exploitable, and disorganized. I reached out to the owner to address these issues, which led me to completely rewrite the entire source code using my own stack (NJS/TS). I also added essential features such as enhanced security, load balancing, mitigation measures, and basic Cloudflare precautions.
 
